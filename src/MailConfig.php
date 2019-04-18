@@ -7,9 +7,9 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Mail\Package;
+namespace Ixocreate\Mail;
 
-use Ixocreate\Mail\Package\Transport\TransportOptionInterface;
+use Ixocreate\Mail\Transport\TransportOptionInterface;
 
 class MailConfig implements \Serializable
 {

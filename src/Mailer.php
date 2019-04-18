@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Mail\Package;
+namespace Ixocreate\Mail;
 
 final class Mailer
 {

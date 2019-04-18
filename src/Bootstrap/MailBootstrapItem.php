@@ -7,11 +7,11 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Mail\Package\Bootstrap;
+namespace Ixocreate\Mail\Bootstrap;
 
 use Ixocreate\Application\Service\Bootstrap\BootstrapItemInterface;
 use Ixocreate\Application\Service\Configurator\ConfiguratorInterface;
-use Ixocreate\Mail\Package\MailConfigurator;
+use Ixocreate\Mail\MailConfigurator;
 
 final class MailBootstrapItem implements BootstrapItemInterface
 {

@@ -7,11 +7,11 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Mail\Package;
+namespace Ixocreate\Mail;
 
 use Ixocreate\Application\Service\Configurator\ConfiguratorInterface;
 use Ixocreate\Application\Service\Registry\ServiceRegistryInterface;
-use Ixocreate\Mail\Package\Transport\TransportOptionInterface;
+use Ixocreate\Mail\Transport\TransportOptionInterface;
 
 class MailConfigurator implements ConfiguratorInterface
 {
