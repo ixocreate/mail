@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Package\Mail;
+namespace Ixocreate\Mail\Package;
 
 use Ixocreate\Application\ConfiguratorInterface;
 use Ixocreate\Application\ServiceRegistryInterface;
-use Ixocreate\Package\Mail\Transport\TransportOptionInterface;
+use Ixocreate\Mail\Package\Transport\TransportOptionInterface;
 
 class MailConfig implements \Serializable
 {

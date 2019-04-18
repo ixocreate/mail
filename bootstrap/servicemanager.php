@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Ixocreate\Package\Mail;
+namespace Ixocreate\Mail\Package;
 
-use Ixocreate\Package\Mail\Factory\MailerFactory;
+use Ixocreate\Mail\Package\Factory\MailerFactory;
 use Ixocreate\ServiceManager\ServiceManagerConfigurator;
 
 /** @var ServiceManagerConfigurator $serviceManager */

@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ixocreate\\Package\\Mail\\": "src/"
+            "Ixocreate\\Mail\\Package\\": "src/"
         }
     },
     "autoload-dev": {

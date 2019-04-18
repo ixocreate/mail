@@ -7,13 +7,13 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Package\Mail;
+namespace Ixocreate\Mail\Package;
 
 use Ixocreate\Application\ConfiguratorRegistryInterface;
-use Ixocreate\Application\PackageInterface;
+use Ixocreate\Application\Package\PackageInterface;
 use Ixocreate\Application\ServiceRegistryInterface;
 use Ixocreate\ServiceManager\ServiceManagerInterface;
-use Ixocreate\Package\Mail\BootstrapItem\MailBootstrapItem;
+use Ixocreate\Mail\Package\Bootstrap\MailBootstrapItem;
 
 final class Package implements PackageInterface
 {
