@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Mail;
 
-use Ixocreate\Application\ConfiguratorInterface;
+use Ixocreate\Application\Configurator\ConfiguratorInterface;
 use Ixocreate\Application\Service\ServiceRegistryInterface;
 use Ixocreate\Mail\Transport\TransportOptionInterface;
 
