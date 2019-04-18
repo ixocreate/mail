@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Mail;
 
-use Ixocreate\Application\Service\Configurator\ConfiguratorInterface;
-use Ixocreate\Application\Service\Registry\ServiceRegistryInterface;
+use Ixocreate\Application\ConfiguratorInterface;
+use Ixocreate\Application\Service\ServiceRegistryInterface;
 use Ixocreate\Mail\Transport\TransportOptionInterface;
 
 class MailConfigurator implements ConfiguratorInterface

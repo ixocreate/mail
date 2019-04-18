@@ -20,6 +20,7 @@ class MailConfig implements \Serializable
 
     /**
      * MailConfig constructor.
+     *
      * @param MailConfigurator $configurator
      */
     public function __construct(MailConfigurator $configurator)

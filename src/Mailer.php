@@ -18,6 +18,7 @@ final class Mailer
 
     /**
      * Mailer constructor.
+     *
      * @param \Swift_Mailer $mailer
      */
     public function __construct(\Swift_Mailer $mailer)

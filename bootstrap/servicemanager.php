@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Mail;
 
+use Ixocreate\Application\Service\ServiceManagerConfigurator;
 use Ixocreate\Mail\Factory\MailerFactory;
-use Ixocreate\ServiceManager\ServiceManagerConfigurator;
 
 /** @var ServiceManagerConfigurator $serviceManager */
 
