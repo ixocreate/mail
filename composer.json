@@ -12,7 +12,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "ixocreate/application": "dev-develop",
+        "ixocreate/application": "dev-consolidate",
         "swiftmailer/swiftmailer": "^6.0"
     },
     "require-dev": {

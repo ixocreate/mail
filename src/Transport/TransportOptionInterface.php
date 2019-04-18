@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Package\Mail\Transport;
 
-use Ixocreate\Contract\ServiceManager\ServiceManagerInterface;
+use Ixocreate\ServiceManager\ServiceManagerInterface;
 
 interface TransportOptionInterface extends \Serializable
 {

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Package\Mail;
 
-use Ixocreate\Contract\Application\ConfiguratorInterface;
-use Ixocreate\Contract\Application\ServiceRegistryInterface;
+use Ixocreate\Application\ConfiguratorInterface;
+use Ixocreate\Application\ServiceRegistryInterface;
 use Ixocreate\Package\Mail\Transport\TransportOptionInterface;
 
 class MailConfig implements \Serializable

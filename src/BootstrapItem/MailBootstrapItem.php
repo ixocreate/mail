@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Package\Mail\BootstrapItem;
 
-use Ixocreate\Contract\Application\BootstrapItemInterface;
-use Ixocreate\Contract\Application\ConfiguratorInterface;
+use Ixocreate\Application\BootstrapItemInterface;
+use Ixocreate\Application\ConfiguratorInterface;
 use Ixocreate\Package\Mail\MailConfigurator;
 
 final class MailBootstrapItem implements BootstrapItemInterface

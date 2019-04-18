@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Package\Mail\Factory;
 
-use Ixocreate\Contract\ServiceManager\FactoryInterface;
-use Ixocreate\Contract\ServiceManager\ServiceManagerInterface;
+use Ixocreate\ServiceManager\FactoryInterface;
+use Ixocreate\ServiceManager\ServiceManagerInterface;
 
 final class MailerFactory implements FactoryInterface
 {
