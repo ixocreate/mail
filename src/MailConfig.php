@@ -1,11 +1,14 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
 
 declare(strict_types=1);
 
 namespace Ixocreate\Mail\Package;
 
-use Ixocreate\Application\ConfiguratorInterface;
-use Ixocreate\Application\ServiceRegistryInterface;
 use Ixocreate\Mail\Package\Transport\TransportOptionInterface;
 
 class MailConfig implements \Serializable
