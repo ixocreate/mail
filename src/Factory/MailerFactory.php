@@ -9,6 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Mail\Factory;
 
+use Ixocreate\Mail\MailConfig;
+use Ixocreate\Mail\Mailer;
 use Ixocreate\ServiceManager\FactoryInterface;
 use Ixocreate\ServiceManager\ServiceManagerInterface;
 
@@ -27,7 +29,8 @@ final class MailerFactory implements FactoryInterface
         /** @var MailConfig $config */
         $config = $container->get(MailConfig::class);
 
-        $mailer = $config->getTransport()->create($container);
+        $transport = $config->transport()->create($container);
+        $mailer = new \Swift_Mailer($transport);
 
         return new Mailer($mailer);
     }

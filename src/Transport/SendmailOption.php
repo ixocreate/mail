@@ -22,9 +22,9 @@ final class SendmailOption implements TransportOptionInterface
      * SendmailOption constructor.
      * @param string $command
      */
-    public function __construct(string $command)
+    public function __construct(?string $command = null)
     {
-        $this->command = $command;
+        $this->command = $command ?? '/usr/sbin/sendmail -bs';
     }
 
     public function create(ServiceManagerInterface $serviceManager): \Swift_Transport

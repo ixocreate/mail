@@ -11,6 +11,7 @@ namespace Ixocreate\Mail;
 
 use Ixocreate\Application\Configurator\ConfiguratorInterface;
 use Ixocreate\Application\Service\ServiceRegistryInterface;
+use Ixocreate\Mail\Transport\SendmailOption;
 use Ixocreate\Mail\Transport\TransportOptionInterface;
 
 class MailConfigurator implements ConfiguratorInterface
@@ -19,6 +20,14 @@ class MailConfigurator implements ConfiguratorInterface
      * @var TransportOptionInterface
      */
     private $transportOption;
+
+    /**
+     * MailConfigurator constructor.
+     */
+    public function __construct()
+    {
+        $this->transportOption = new SendmailOption();
+    }
 
     public function setTransport(TransportOptionInterface $transportOption)
     {
@@ -32,5 +41,6 @@ class MailConfigurator implements ConfiguratorInterface
 
     public function registerService(ServiceRegistryInterface $serviceRegistry): void
     {
+        $serviceRegistry->add(MailConfig::class, new MailConfig($this));
     }
 }
