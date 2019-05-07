@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Mail\Transport;
+namespace Ixocreate\Mail\Option;
 
 use Ixocreate\ServiceManager\ServiceManagerInterface;
 

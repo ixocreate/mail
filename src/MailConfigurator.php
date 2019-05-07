@@ -11,8 +11,8 @@ namespace Ixocreate\Mail;
 
 use Ixocreate\Application\Configurator\ConfiguratorInterface;
 use Ixocreate\Application\Service\ServiceRegistryInterface;
-use Ixocreate\Mail\Transport\SendmailOption;
-use Ixocreate\Mail\Transport\TransportOptionInterface;
+use Ixocreate\Mail\Option\SendmailOption;
+use Ixocreate\Mail\Option\TransportOptionInterface;
 
 class MailConfigurator implements ConfiguratorInterface
 {

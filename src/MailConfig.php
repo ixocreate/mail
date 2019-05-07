@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace Ixocreate\Mail;
 
 use Ixocreate\Application\Service\SerializableServiceInterface;
-use Ixocreate\Mail\Transport\TransportOptionInterface;
+use Ixocreate\Mail\Option\TransportOptionInterface;
 
 class MailConfig implements SerializableServiceInterface
 {
