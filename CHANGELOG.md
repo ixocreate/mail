@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.1.2...develop)
+## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.1.3...develop)
+
+## [v0.1.3 (2019-05-07)](https://github.com/ixocreate/mail-package/compare/0.1.2...0.1.3)
+### Changed
+- refactor Option namespace
+- add directory transport
 
 ## [v0.1.2 (2019-05-03)](https://github.com/ixocreate/mail-package/compare/0.1.1...0.1.2)
 ### Added
