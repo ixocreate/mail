@@ -1,4 +1,9 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
 
 declare(strict_types=1);
 
@@ -45,18 +50,17 @@ class DirectoryTransport implements \Swift_Transport
     {
         $content = $message->toString();
 
-        \file_put_contents($this->directory .  \time() . '_' . \mt_rand() . '.eml', $content);
+        \file_put_contents($this->directory . \time() . '_' . \mt_rand() . '.eml', $content);
 
         $count = (
-            count((array) $message->getTo())
-            + count((array) $message->getCc())
-            + count((array) $message->getBcc())
+            \count((array) $message->getTo())
+            + \count((array) $message->getCc())
+            + \count((array) $message->getBcc())
         );
         return $count;
     }
 
     public function registerPlugin(Swift_Events_EventListener $plugin)
     {
-
     }
 }
