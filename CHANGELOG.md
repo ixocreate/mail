@@ -1,6 +1,8 @@
 # Release Notes
 
-## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.1.3...develop)
+## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.1.4...develop)
+
+## [v0.1.4 (2019-05-08)](https://github.com/ixocreate/mail-package/compare/0.1.3...0.1.4)
 ### Changed
 - fixed missing serialization support
 
