@@ -116,13 +116,31 @@ final class SmtpOption implements TransportOptionInterface
         return $this->encryption;
     }
 
+    /**
+     * @return string
+     */
     public function serialize()
     {
-        // TODO: Implement serialize() method.
+        return \serialize([
+            'host' => $this->host,
+            'port' => $this->port,
+            'username' => $this->username,
+            'password' => $this->password,
+            'encryption' => $this->encryption,
+        ]);
     }
 
+    /**
+     * @param string $serialized
+     */
     public function unserialize($serialized)
     {
-        // TODO: Implement unserialize() method.
+        $unserialize = \unserialize($serialized);
+
+        $this->host = $unserialize['host'];
+        $this->port = $unserialize['port'];
+        $this->username = $unserialize['username'];
+        $this->password = $unserialize['password'];
+        $this->encryption = $unserialize['encryption'];
     }
 }

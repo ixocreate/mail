@@ -25,7 +25,7 @@ final class DirectoryOption implements TransportOptionInterface
      */
     public function __construct(string $directory)
     {
-        $this->directory = rtrim($directory, '/') . '/';
+        $this->directory = \rtrim($directory, '/') . '/';
     }
 
     public function create(ServiceManagerInterface $serviceManager): \Swift_Transport
