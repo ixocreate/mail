@@ -36,11 +36,11 @@ class MailConfig implements SerializableServiceInterface
 
     public function serialize()
     {
-        // TODO: Implement serialize() method.
+        return \serialize($this->transportOption);
     }
 
     public function unserialize($serialized)
     {
-        // TODO: Implement unserialize() method.
+        $this->transportOption = \unserialize($serialized);
     }
 }
