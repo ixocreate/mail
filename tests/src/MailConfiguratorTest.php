@@ -17,7 +17,6 @@ use PHPUnit\Framework\TestCase;
 
 class MailConfiguratorTest extends TestCase
 {
-
     /**
      * @var MailConfigurator
      */

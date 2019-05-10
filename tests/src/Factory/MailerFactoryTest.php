@@ -33,7 +33,7 @@ class MailerFactoryTest extends TestCase
         $container = [MailConfig::class => new MailConfig($this->mailConfigurator)];
 
         $serviceManager = $this->createMock(ServiceManagerInterface::class);
-        $serviceManager->method('get')->willReturnCallback(function ($id) use (&$container){
+        $serviceManager->method('get')->willReturnCallback(function ($id) use (&$container) {
             return $container[$id];
         });
 

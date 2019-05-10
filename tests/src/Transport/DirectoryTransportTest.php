@@ -51,8 +51,9 @@ class DirectoryTransportTest extends TestCase
 
         $content = \scandir(__DIR__);
         foreach ($content as $file) {
-            if (\pathinfo($file, PATHINFO_EXTENSION) === 'eml')
+            if (\pathinfo($file, PATHINFO_EXTENSION) === 'eml') {
                 \unlink($file);
+            }
         }
     }
 

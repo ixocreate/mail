@@ -1,4 +1,11 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
+ * @license MIT License
+ */
+
+declare(strict_types=1);
 
 namespace Ixocreate\Test\Mail\Option;
 
@@ -108,7 +115,7 @@ class SmtpOptionTest extends TestCase
 
     public function testUsername()
     {
-        $this->assertSame($this->username,$this->smtpOption->username());
+        $this->assertSame($this->username, $this->smtpOption->username());
     }
 
     public function testPassword()
@@ -132,7 +139,7 @@ class SmtpOptionTest extends TestCase
             'port' => $this->port,
             'username' => $this->username,
             'password' => $this->password,
-            'encryption' => 'tls'
+            'encryption' => 'tls',
         ];
         $serialize = \serialize($settings);
 
@@ -148,7 +155,7 @@ class SmtpOptionTest extends TestCase
             'port' => $this->port,
             'username' => $this->username,
             'password' => $this->password,
-            'encryption' => 'tls'
+            'encryption' => 'tls',
         ];
         $serialize = \serialize($settings);
         $unserialize = \unserialize($serialize);
@@ -161,7 +168,7 @@ class SmtpOptionTest extends TestCase
             'port' => $smtpOption->port(),
             'username' => $smtpOption->username(),
             'password' => $smtpOption->password(),
-            'encryption' => $smtpOption->encryption()
+            'encryption' => $smtpOption->encryption(),
         ];
         $this->assertSame($unserialize, $smtpSettings);
     }
