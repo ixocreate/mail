@@ -9,11 +9,14 @@ declare(strict_types=1);
 
 namespace Ixocreate\Test\Mail\Factory;
 
+use Ixocreate\Application\Service\ServiceManagerConfig;
+use Ixocreate\Application\Service\ServiceManagerConfigurator;
 use Ixocreate\Mail\Factory\MailerFactory;
 use Ixocreate\Mail\MailConfig;
 use Ixocreate\Mail\MailConfigurator;
 use Ixocreate\Mail\Mailer;
-use Ixocreate\ServiceManager\ServiceManagerInterface;
+use Ixocreate\ServiceManager\ServiceManager;
+use Ixocreate\ServiceManager\ServiceManagerSetup;
 use PHPUnit\Framework\TestCase;
 
 class MailerFactoryTest extends TestCase
@@ -30,17 +33,20 @@ class MailerFactoryTest extends TestCase
      */
     public function testFactoryProducesMailer()
     {
-        $container = [MailConfig::class => new MailConfig($this->mailConfigurator)];
+        $serviceManagerConfigurator = new ServiceManagerConfigurator();
 
-        $serviceManager = $this->createMock(ServiceManagerInterface::class);
-        $serviceManager->method('get')->willReturnCallback(function ($id) use (&$container) {
-            return $container[$id];
-        });
+        $serviceManagerConfigurator->addService(MailConfigurator::class);
+        $serviceManagerConfigurator->addFactory(MailConfig::class);
 
-        $factory = new MailerFactory();
+        $serviceManagerConfig = new ServiceManagerConfig($serviceManagerConfigurator);
 
-        /** @var Mailer $mailer */
-        $mailer = $factory($serviceManager, MailerFactory::class);
+        $serviceManagerSetup = new ServiceManagerSetup();
+
+        $serviceManager = new ServiceManager($serviceManagerConfig, $serviceManagerSetup);
+
+        $mailerFactory = new MailerFactory();
+
+        $mailer = $mailerFactory($serviceManager, Mailer::class);
 
         $this->assertInstanceOf(Mailer::class, $mailer);
     }
