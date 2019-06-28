@@ -1,7 +1,8 @@
 # Release Notes
 
-## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.1.4...develop)
+## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.1.5...develop)
 
+## [v0.1.5 (2019-06-28)](https://github.com/ixocreate/mail-package/compare/0.1.4...0.1.5)
 ### Changed
 - MailConfigurator - getTransport() must return TransportOptionInterface 
 - MailConfig & MailConfigurator - declared final
