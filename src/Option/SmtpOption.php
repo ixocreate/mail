@@ -1,7 +1,7 @@
 <?php
 /**
  * @link https://github.com/ixocreate
- * @copyright IXOCREATE GmbH
+ * @copyright IXOLIT GmbH
  * @license MIT License
  */
 
@@ -54,7 +54,7 @@ final class SmtpOption implements TransportOptionInterface
         $this->password = $password;
 
         if ($encryption !== null) {
-            if ($this->encryption != 'tls' && $this->encryption != 'ssl') {
+            if ($encryption != 'tls' && $encryption != 'ssl') {
                 throw new \InvalidArgumentException('encryption must be ssl or tls');
             }
             \stream_get_transports();

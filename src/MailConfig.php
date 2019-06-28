@@ -1,7 +1,7 @@
 <?php
 /**
  * @link https://github.com/ixocreate
- * @copyright IXOCREATE GmbH
+ * @copyright IXOLIT GmbH
  * @license MIT License
  */
 
@@ -12,7 +12,7 @@ namespace Ixocreate\Mail;
 use Ixocreate\Application\Service\SerializableServiceInterface;
 use Ixocreate\Mail\Option\TransportOptionInterface;
 
-class MailConfig implements SerializableServiceInterface
+final class MailConfig implements SerializableServiceInterface
 {
     /**
      * @var TransportOptionInterface

@@ -1,7 +1,7 @@
 <?php
 /**
  * @link https://github.com/ixocreate
- * @copyright IXOCREATE GmbH
+ * @copyright IXOLIT GmbH
  * @license MIT License
  */
 
@@ -14,7 +14,7 @@ use Ixocreate\Application\Service\ServiceRegistryInterface;
 use Ixocreate\Mail\Option\SendmailOption;
 use Ixocreate\Mail\Option\TransportOptionInterface;
 
-class MailConfigurator implements ConfiguratorInterface
+final class MailConfigurator implements ConfiguratorInterface
 {
     /**
      * @var TransportOptionInterface
@@ -34,7 +34,7 @@ class MailConfigurator implements ConfiguratorInterface
         $this->transportOption = $transportOption;
     }
 
-    public function getTransport(): ?TransportOptionInterface
+    public function getTransport(): TransportOptionInterface
     {
         return $this->transportOption;
     }
