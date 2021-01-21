@@ -33,8 +33,7 @@ class PackageTest extends TestCase
         $package->boot($serviceManager);
 
         $this->assertSame([MailBootstrapItem::class], $package->getBootstrapItems());
-        $this->assertNull($package->getConfigDirectory());
-        $this->assertNull($package->getConfigProvider());
+
         $this->assertNull($package->getDependencies());
         $this->assertDirectoryExists($package->getBootstrapDirectory());
     }
