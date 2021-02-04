@@ -29,16 +29,6 @@ class DirectoryTransportTest extends TestCase
         $this->assertInstanceOf(DirectoryTransport::class, $this->directoryTransport);
     }
 
-    public function testStop()
-    {
-        $this->doesNotPerformAssertions();
-    }
-
-    public function testStart()
-    {
-        $this->doesNotPerformAssertions();
-    }
-
     public function testSend()
     {
         $message = $this->createMock(\Swift_Mime_SimpleMessage::class);
@@ -65,10 +55,5 @@ class DirectoryTransportTest extends TestCase
     public function testIsStarted()
     {
         $this->assertEquals(true, $this->directoryTransport->isStarted());
-    }
-
-    public function testRegisterPlugin()
-    {
-        $this->doesNotPerformAssertions();
     }
 }

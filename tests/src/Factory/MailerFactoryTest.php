@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Test\Mail\Factory;
 
-use Ixocreate\Application\Service\ServiceManagerConfig;
+use Ixocreate\Application\ServiceManager\ServiceManagerConfig;
 use Ixocreate\Application\ServiceManager\ServiceManagerConfigurator;
 use Ixocreate\Mail\Factory\MailerFactory;
 use Ixocreate\Mail\MailConfig;
