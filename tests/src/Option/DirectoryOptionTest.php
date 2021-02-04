@@ -25,7 +25,7 @@ class DirectoryOptionTest extends TestCase
      */
     private $directory;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->directory = 'foo/';
         $this->directoryOption = new DirectoryOption($this->directory);

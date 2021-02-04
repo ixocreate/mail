@@ -23,7 +23,7 @@ class MailerFactoryTest extends TestCase
 {
     private $mailConfigurator;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->mailConfigurator = new MailConfigurator();
     }

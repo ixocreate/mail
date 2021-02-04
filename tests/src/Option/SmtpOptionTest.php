@@ -40,7 +40,7 @@ class SmtpOptionTest extends TestCase
      */
     private $smtpOption;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->host = 'foo.bar.com';
         $this->port = 25;

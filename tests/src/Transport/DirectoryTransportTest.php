@@ -19,7 +19,7 @@ class DirectoryTransportTest extends TestCase
      */
     private $directoryTransport;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->directoryTransport = new DirectoryTransport('foo');
     }

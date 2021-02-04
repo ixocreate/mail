@@ -26,7 +26,7 @@ class MailConfigTest extends TestCase
      */
     private $mailConfigurator;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->mailConfigurator = new MailConfigurator();
         $this->mailConfig = new MailConfig($this->mailConfigurator);
