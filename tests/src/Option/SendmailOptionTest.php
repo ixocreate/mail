@@ -25,7 +25,7 @@ class SendmailOptionTest extends TestCase
      */
     private $sendMailOption;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->command = 'foo';
         $this->sendMailOption = new SendmailOption($this->command);

@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.1.5...develop)
+## [Unreleased](https://github.com/ixocreate/mail-package/compare/0.2.0...develop)
+
+## [v0.2.0 (2021-01-21)](https://github.com/ixocreate/mail-package/compare/0.2.0...0.2.0)
+### Changed
+- Update to Application 0.3
 
 ## [v0.1.5 (2019-06-28)](https://github.com/ixocreate/mail-package/compare/0.1.4...0.1.5)
 ### Changed

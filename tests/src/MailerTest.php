@@ -19,7 +19,7 @@ class MailerTest extends TestCase
      */
     private $swiftMailer;
 
-    public function setUp()
+    public function setUp(): void
     {
         /** @var \Swift_Transport $transport */
         $transport = $this->createMock(\Swift_Transport::class);

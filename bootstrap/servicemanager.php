@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Mail;
 
-use Ixocreate\Application\Service\ServiceManagerConfigurator;
+use Ixocreate\Application\ServiceManager\ServiceManagerConfigurator;
 use Ixocreate\Mail\Factory\MailerFactory;
 
 /** @var ServiceManagerConfigurator $serviceManager */

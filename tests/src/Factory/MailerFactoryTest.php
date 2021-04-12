@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Test\Mail\Factory;
 
-use Ixocreate\Application\Service\ServiceManagerConfig;
-use Ixocreate\Application\Service\ServiceManagerConfigurator;
+use Ixocreate\Application\ServiceManager\ServiceManagerConfig;
+use Ixocreate\Application\ServiceManager\ServiceManagerConfigurator;
 use Ixocreate\Mail\Factory\MailerFactory;
 use Ixocreate\Mail\MailConfig;
 use Ixocreate\Mail\MailConfigurator;
@@ -23,7 +23,7 @@ class MailerFactoryTest extends TestCase
 {
     private $mailConfigurator;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->mailConfigurator = new MailConfigurator();
     }

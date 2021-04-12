@@ -19,7 +19,7 @@ class DirectoryTransportTest extends TestCase
      */
     private $directoryTransport;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->directoryTransport = new DirectoryTransport('foo');
     }
@@ -27,16 +27,6 @@ class DirectoryTransportTest extends TestCase
     public function test__construct()
     {
         $this->assertInstanceOf(DirectoryTransport::class, $this->directoryTransport);
-    }
-
-    public function testStop()
-    {
-        $this->doesNotPerformAssertions();
-    }
-
-    public function testStart()
-    {
-        $this->doesNotPerformAssertions();
     }
 
     public function testSend()
@@ -65,10 +55,5 @@ class DirectoryTransportTest extends TestCase
     public function testIsStarted()
     {
         $this->assertEquals(true, $this->directoryTransport->isStarted());
-    }
-
-    public function testRegisterPlugin()
-    {
-        $this->doesNotPerformAssertions();
     }
 }
